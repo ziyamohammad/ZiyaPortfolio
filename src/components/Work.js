@@ -41,7 +41,7 @@ const[certificate,setcertificate]=useState([
         certiname:"Python Programming"
     },
      {
-        certimg:"./Infosys cyber.png",
+        certimg:"./infosys cyber.png",
         certiname:"Cyber Security"
     },
      {
