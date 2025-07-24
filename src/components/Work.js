@@ -4,7 +4,7 @@ const Work = () => {
     const[subhead,Setsubhead]=useState("all")
     const[webarray,setwebarray]=useState([
         {
-            webimg:"./Careconnect.png",
+            webimg:"./CareConnect.png",
             webname:"CareConnect",
             webhref:"https://semicolon-frontend.vercel.app/"
         },
