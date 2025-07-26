@@ -10,28 +10,35 @@ import Resume from './components/Resume';
 import Work from './components/Work';
 import Skils from './components/Skils';
 import Contact from './components/Contact';
+import useWindowWidth from './components/usewindowwidth';
+import Fullpage from './components/Fullpage';
 
 
 
 
 function App() {
 
- 
+  const width = useWindowWidth();
   return (
     <div className="App">
       <CustonCursor/>
       <Router>
-        <div className="headmain">
     <Header/>
+    <div className="mainitem">
     <Main/>
-    </div>
+
     <Routes>
-      <Route path="/" element={<About/>} />
-        <Route path="/resume" element={<Resume/>} />
-         <Route path="/works" element={<Work/>} />
-          <Route path="/skills" element={<Skils/>} />
-           <Route path="/contact" element={<Contact/>} />
+        <Route
+              path="/"
+              element={width <= 1125 ? <Fullpage/> : <About />} 
+            />
+      <Route path="/about" element={width <= 1125 ?"":<About/>} />
+        <Route path="/resume" element={width <= 1125 ?"":<Resume/>}  />
+         <Route path="/works" element={width <= 1125 ?"":<Work/>}  />
+          <Route path="/skills" element={width <= 1125 ?"":<Skils/>}  />
+           <Route path="/contact" element={width <= 1125 ?"":<Contact/>}  />
     </Routes>
+    </div>
     </Router>
     </div>
   );
