@@ -6,7 +6,7 @@ const Header = () => {
   const navigate = useNavigate();
  const [activeTab, setActiveTab] = useState("");
   const handleabout= () =>{
-    navigate("/")
+    navigate("/about")
     setActiveTab("about");
   }
    const handleresume= () =>{

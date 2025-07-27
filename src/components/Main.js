@@ -1,9 +1,11 @@
 import { Facebook, Github, Instagram, Link, Linkedin, Phone } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Main = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const phone = "6387034769" ;
 
   const images = [
     {
@@ -71,8 +73,8 @@ const Main = () => {
         <Linkedin  fill ="white" size="28px"/>
       </div>
       <div className = "aboutbuttons">
-        <button className ="button1">Download CV<Link fill="white" size="20px"/></button>
-        <button className ="button2">Contact me <Phone fill="white" size="20px"/></button>
+        <a href="https://drive.google.com/file/d/19z1BKU2XtEOMAQa0jPPJHHHn8CtLjh10/view?usp=sharing" target="_blank" rel="noreferrer" className ="button1" >Download CV<Link fill="white" size="20px"/></a>
+         <a href = {`tel:${phone}`} className ="button2">Contact me <Phone fill="white" size="20px"/></a>
       </div>
     </div>
   );

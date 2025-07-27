@@ -32,11 +32,11 @@ function App() {
               path="/"
               element={width <= 1125 ? <Fullpage/> : <About />} 
             />
-      <Route path="/about" element={width <= 1125 ?"":<About/>} />
-        <Route path="/resume" element={width <= 1125 ?"":<Resume/>}  />
-         <Route path="/works" element={width <= 1125 ?"":<Work/>}  />
-          <Route path="/skills" element={width <= 1125 ?"":<Skils/>}  />
-           <Route path="/contact" element={width <= 1125 ?"":<Contact/>}  />
+      <Route path="/about" element={<About/>} />
+        <Route path="/resume" element={<Resume/>}  />
+         <Route path="/works" element={<Work/>}  />
+          <Route path="/skills" element={<Skils/>}  />
+           <Route path="/contact" element={<Contact/>}  />
     </Routes>
     </div>
     </Router>

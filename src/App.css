@@ -4,6 +4,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 .App{
   height:100vh;
@@ -216,9 +217,15 @@
   margin-top: 30px;
   margin-bottom:79px;
 }
-
+a {
+  all: unset; 
+  
+  cursor: pointer;
+}
 .button1 , .button2{
   width:250px;
+   text-decoration: none; /* ✅ Removes underline */
+  color: white;
   height:60px;
   display:flex;
   align-items: center;
@@ -332,7 +339,7 @@
   align-items: center;
      font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 14px;
  
   color:white;
   justify-content: center;
@@ -369,7 +376,7 @@
   height:auto;
      font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 14px;
  
   color:white;
   width:20%;
@@ -412,7 +419,7 @@
   width:20%;
      font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 14px;
  
   color:white;
   gap:10px;
@@ -455,7 +462,7 @@
   gap:10px;
      font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 14px;
  
   color:white;
    display:flex;
@@ -879,7 +886,7 @@ li::before{
   gap:10px;
   font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     margin-bottom: 20px;
  }
@@ -1208,4 +1215,104 @@ li::before{
   height:auto;
   width:100%;
 }
+ }
+
+ @media screen and (max-width:620px){
+   .App{
+    flex-direction: column;
+    padding:0px;
+   }
+   .header{
+    z-index: 444444;
+    position: fixed;
+    margin-top:0px;
+    width:100%;
+    padding:0px;
+     justify-content: space-between;
+
+    top:0px;
+    left: 0px;
+    flex-direction: row;
+    border-radius: 0px;
+    background-color: #31313aad;
+    height:18%;
+    overflow:auto;
+    
+
+   }
+   .dark{
+    display: none;
+   }
+   .headitems{
+    height: 100%;
+    flex-direction: row;
+    width:100%;
+    border-radius:0px;
+    justify-content: space-around;
+    top:0px;
+    left:0px;
+    background:none;
+   }
+   .mainitem{
+    padding:120px  10px 0px 10px;
+    width:100%;
+   }
+   .circleitem{
+    display:none;
+   }
+   .contacticon{
+    flex-direction: column;
+    gap:20px;
+   }
+   .aboutphone, .aboutlocation , .aboutsupport ,.aboutemail ,.aboutphone1, .aboutlocation1, .aboutsupport1 ,.aboutemail1{
+    width:80%;
+   }
+   .myservices{
+    flex-direction: column;
+   }
+   .fullstack , .aiintegration ,.apidev,.uiux  {
+    width:100%
+   }
+   .achievements{
+    flex-wrap: wrap;
+   }
+   .allfour{
+    width:50%;
+   }
+   .eduexp{
+    flex-direction: column;
+    gap:30px;
+   }
+   .experience ,.education{
+    width:100%;
+   }
+   .logo ,.edulogo{
+    justify-content: space-between;
+    padding-right:20px;
+   }
+   .education::before{
+    width:0px;
+   }
+   .webapp{
+    width:90%;
+   }
+   .frontend, .backend, .AIintegration, .Tools, .Languages{
+    width:100%;
+   }
+   .frontend::before{
+    width:0px;
+   }
+   .Languages::before{
+    width:0px;
+   }
+   .Tools::before{
+    width:0px;
+   }
+   .submit{
+    align-items: center;
+    margin-left: 0px;
+   }
+   form{
+    align-items: center;
+   }
  }

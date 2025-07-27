@@ -1,4 +1,4 @@
-// useWindowWidth.js
+
 import { useState, useEffect } from 'react';
 
 const useWindowWidth = () => {
