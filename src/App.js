@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <CustonCursor/>
       <Router>
-        {width<=620?<Responsive/>:""}
+        {width<=670?<Responsive/>:""}
     <Header/>
     <div className="mainitem">
     <Main/>

@@ -2,6 +2,7 @@ import { Award, BotMessageSquare, Code2, CodeXml, Database, HandHeart, Laptop, M
 import React from 'react'
 
 const About = () => {
+  const phone = "6387034769" ;
   return (
     <div className="about">
       <h1 className="abouthead">About Me</h1>
@@ -10,22 +11,22 @@ const About = () => {
         <p>Hi, I'm Mohammad Ziya — a passionate full-stack developer and tech enthusiast currently pursuing B.Tech in CSIT. With a strong foundation in React, Node.js, and C++, I love building impactful projects that solve real-world problems. I've also been recognized in national-level hackathons like Code for Bharat. Let's build something meaningful together!</p>
       </div> 
       <div className="contacticon">
-        <div className="aboutphone">
+        <a href={`tel:${phone}`} className="aboutphone">
          <Phone fill="#BB06FC" size="30px"/>
          <span>Call</span>
-        </div>
-        <div className="aboutlocation">
+        </a>
+        <a href ="https://www.google.com/maps/place/AKGEC+Central+Library/@28.6765587,77.4980679,17z/data=!3m1!4b1!4m6!3m5!1s0x390cf243b9724ab7:0x8b006649d0d90739!8m2!3d28.6765587!4d77.5006428!16s%2Fg%2F11bxdylpv8?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" className="aboutlocation">
           <MapPin fill="#61CE70" size="30px" />
-          <span>Kanpur,India</span>
-        </div>
-        <div className="aboutsupport">
+          <span>Delhi,India</span>
+        </a>
+        <a href="https://www.instagram.com/ziya_mohammad_.123/" target="_blank" className="aboutsupport">
          <HandHeart fill="#FBFC06"  size="30px"/>
          <span>Support</span>
-        </div>
-        <div className="aboutemail">
+        </a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" className="aboutemail">
          <MailOpen fill="#06B3FC" size="30px" />
          <span>Email</span>
-        </div>
+        </a>
       </div>
       <h1 className="abouthead">My Services</h1>
       <div className="myservices">

@@ -1196,7 +1196,7 @@ li::before{
 }
  }
 
- @media screen and (max-width:620px){
+ @media screen and (max-width:670px){
    .App{
     flex-direction: column;
     padding:0px;
