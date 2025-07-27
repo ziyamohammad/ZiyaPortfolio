@@ -12,6 +12,7 @@ import Skils from './components/Skils';
 import Contact from './components/Contact';
 import useWindowWidth from './components/usewindowwidth';
 import Fullpage from './components/Fullpage';
+import Responsive from './components/Responsive';
 
 
 
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       <CustonCursor/>
       <Router>
+        {width<=620?<Responsive/>:""}
     <Header/>
     <div className="mainitem">
     <Main/>

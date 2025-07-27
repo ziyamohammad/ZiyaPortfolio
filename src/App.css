@@ -1087,77 +1087,56 @@ li::before{
   font-size: 16px;
   gap:5px;
  }
-
- /* @media screen and (max-width:1124px){
-.App{
-  flex-direction: column;
-  overflow: auto;
-  height: auto;
-  padding-top:30px;
-  
-}
-.headmain{
+ .responsiveheader{
   width:100%;
-}
-.main{
-  width:91%;
-}
-.header{
-  height:100%;
-}
-.headitems{
- gap:30px;
-}
-.slider-img{
-  width:100%;
-}
-.image-slider{
-  width:100%;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.about ,.contact ,.Skills ,.works,.resume{
-  width:92%;
-  margin-left: 78px;
-}
-.button1 ,.button2{
-  margin-top: 0px;
-  width:50%;
- border:none;
-}
-.button1{
-  position: relative;
-}
-.button1::before {
-    content: '';
-    position: absolute;
-    right: 1px;
-    top: 0px;
-    width: 1px;
-    height: 100%;
-    background: -webkit-radial-gradient(top, ellipse cover, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%)
-
+  position:fixed;
+  top:0px;
+  height:auto;
+  left:0px;
+  display:flex;
+  background-color: #31313aad;
+  z-index:4444444;
+  padding:10px;
+  justify-content: space-between;
  }
-
-.logos{
-  margin-bottom: 30px;
-}
-.aboutbuttons{
-  width:100%;
-  position: relative;
-}
-.aboutbuttons::before {
-    content: '';
+ .responsiveheader::before {
+    content: "";
     position: absolute;
-    left: 1px;
-    top: 0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 1px;
-    background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 40%, rgba(255, 255, 255, 0) 70%);
-
+    height: 2px;
+    background: radial-gradient(ellipse at top, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 90%);
+}
+ .picname{
+  display:flex;
+  gap:10px;
  }
-} */
+ .pic{
+  width:37px;
+  border-radius: 40px;
+  overflow: hidden;
+ }
+ .name2{
+  display:flex;
+  flex-direction: column;
+ }
+.na{
+  font-size: 15px;
+    color: white;
+    font-weight: 500;
+    font-family: "Poppins" ,sans-serif; ;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.me{
+  color: #ff9800;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+   
+}
+ /* responsiveness */
  @media screen and (max-width:1124px){
  .mainitem{
   flex-direction: column;
@@ -1230,12 +1209,12 @@ li::before{
     padding:0px;
      justify-content: space-between;
 
-    top:0px;
+    top:63px;
     left: 0px;
     flex-direction: row;
     border-radius: 0px;
     background-color: #31313aad;
-    height:18%;
+    height:14%;
     overflow:auto;
     
 

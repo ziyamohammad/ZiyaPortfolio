@@ -9,7 +9,7 @@ const Responsive = () => {
             <div className="pic">
                 <img src = "./profileimg.jpg" alt="/" height="100%" width="100%" />
             </div>
-            <div className="name">
+            <div className="name2">
                 <span className="na">Mohammad Ziya</span>
                 <span className="me">
                     <Typewriter
@@ -24,7 +24,7 @@ const Responsive = () => {
                 </span>
             </div>
         </div>
-         <span className = "dark">
+         <span className = "dark1">
         <Sun color="white" size="35px"/>
       </span>
       
