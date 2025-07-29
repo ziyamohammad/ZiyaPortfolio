@@ -194,7 +194,7 @@ const Skils = () => {
              <div className="encirclet">
               <Code color="#ff9800" size="20px" strokeWidth={3}/>
              </div>
-             <h1 className="experiencehead">Others</h1>
+             <h1 className="experiencehead">Languages</h1>
            </div>
            <div className="frontendicons">
             {language.map((item)=>{

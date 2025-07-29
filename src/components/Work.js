@@ -59,7 +59,7 @@ const[certificate,setcertificate]=useState([
   return (
     <div className="works">
       <div className="workhead">
-        <h2 className = "headingwork">Works</h2>
+        <h2 className = "headingwork">Projects</h2>
         <div className="subhead">
              <span className = {subhead==="all" ?"notall":"all"} onClick={()=>{Setsubhead("all")}}>All</span>
             <span className ={subhead==="websites" ?"notwebsite":"website"}  onClick={()=>{Setsubhead("websites")}}>Website</span>
